@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/NetflixoReactApp/static/css/main.3ec6bc51.css",
+    "main.js": "/NetflixoReactApp/static/js/main.893c0953.js",
+    "static/js/787.cd60fb8e.chunk.js": "/NetflixoReactApp/static/js/787.cd60fb8e.chunk.js",
+    "static/media/4.jpg": "/NetflixoReactApp/static/media/4.205c4d3cb3992c20af26.jpg",
+    "static/media/head.png": "/NetflixoReactApp/static/media/head.02acca9b1c7ba9e26c92.png",
+    "static/media/mobile.png": "/NetflixoReactApp/static/media/mobile.5ea7905dec53c4abfc74.png",
+    "static/media/about2.jpg": "/NetflixoReactApp/static/media/about2.faa9aec5c6fd50a54c12.jpg",
+    "static/media/3.jpg": "/NetflixoReactApp/static/media/3.8ae06072686918fa322d.jpg",
+    "static/media/2.jpeg": "/NetflixoReactApp/static/media/2.53dc228a8f289499f9a2.jpeg",
+    "static/media/5.jpg": "/NetflixoReactApp/static/media/5.53865f17c46163cc77b3.jpg",
+    "static/media/1.jpg": "/NetflixoReactApp/static/media/1.6b23ba725e4f9d974452.jpg",
+    "static/media/6.jpg": "/NetflixoReactApp/static/media/6.56d2e5c08b4b484c0e69.jpg",
+    "static/media/404.svg": "/NetflixoReactApp/static/media/404.eef3f90c1344c7de195dbb68ac66ec3a.svg",
+    "index.html": "/NetflixoReactApp/index.html",
+    "main.3ec6bc51.css.map": "/NetflixoReactApp/static/css/main.3ec6bc51.css.map",
+    "main.893c0953.js.map": "/NetflixoReactApp/static/js/main.893c0953.js.map",
+    "787.cd60fb8e.chunk.js.map": "/NetflixoReactApp/static/js/787.cd60fb8e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ec6bc51.css",
+    "static/js/main.893c0953.js"
+  ]
+}
