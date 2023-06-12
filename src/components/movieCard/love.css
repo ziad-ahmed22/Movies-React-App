@@ -1,0 +1,14 @@
+svg {
+  background-color: rgba(255, 255, 255, 0.226);
+  color: white;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+svg:hover,
+svg.active {
+  background-color: var(--main-color);
+  color: white;
+}

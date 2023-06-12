@@ -1,0 +1,54 @@
+.top-rated h3 {
+  border-left: 4px solid var(--main-color);
+  padding: 5px 13px;
+}
+.top-rated .swiper {
+  cursor: unset;
+  height: 420px;
+}
+.top-rated .swiper .swiper-wrapper {
+  display: flex;
+  height: 0;
+}
+.top-rated .swiper .swiper-wrapper .swiper-slide {
+  height: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.443);
+  overflow: hidden;
+}
+.top-rated .swiper .swiper-slide .info {
+  transition: 0.3s;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.801);
+  opacity: 0;
+  visibility: hidden;
+}
+.top-rated .swiper .swiper-slide:hover .info {
+  opacity: 1;
+  visibility: visible;
+}
+.top-rated .swiper .swiper-slide .info > svg {
+  background-color: rgba(255, 255, 255, 0.226);
+  color: white;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.top-rated .swiper .swiper-slide .info > svg:hover,
+.top-rated .swiper .swiper-slide .info > svg.active {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+.top-rated .swiper .swiper-slide .info .stars svg {
+  color: yellow;
+  margin: 3px;
+  font-size: 20px;
+}
+.top-rated .btns svg {
+  cursor: pointer;
+}
+.top-rated .btns svg:hover {
+  color: white !important;
+}

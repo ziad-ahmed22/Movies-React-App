@@ -1,0 +1,7 @@
+.search,
+.search input {
+  border: 1px solid rgba(255, 255, 255, 0.192) !important;
+}
+.search input:focus {
+  border-color: rgba(255, 255, 255, 0.539) !important;
+}

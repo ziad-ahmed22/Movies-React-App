@@ -1,0 +1,21 @@
+footer .logo {
+  margin-top: -25px;
+}
+footer ul li {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+footer ul li:hover > a {
+  color: white !important;
+}
+footer ul li:hover {
+  cursor: pointer;
+  transform: translateX(15px);
+  -webkit-transform: translateX(15px);
+  -moz-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  -o-transform: translateX(15px);
+}

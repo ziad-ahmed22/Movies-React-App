@@ -1,0 +1,30 @@
+.navbar {
+  z-index: 50000000000;
+  position: sticky !important;
+  top: 0;
+}
+.nav > a:hover,
+.nav > a.active {
+  color: var(--main-color) !important;
+}
+.nav .love-icon {
+  position: relative;
+  display: inline-block;
+}
+.nav a.active svg {
+  color: white;
+  background-color: var(--main-color);
+}
+.nav .loves-num {
+  position: absolute;
+  top: 2px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+}
+.nav > a:hover .loves-num,
+.nav > a.active .loves-num {
+  color: var(--main-color) !important;
+  background-color: white !important;
+}

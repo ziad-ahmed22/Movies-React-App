@@ -1,0 +1,22 @@
+.details {
+  height: 90vh;
+}
+
+.details .bg-img img {
+  object-fit: cover;
+}
+.details .content {
+  background-color: rgba(0, 0, 0, 0.888);
+  position: absolute;
+  inset: 0;
+}
+.details .content .box svg:hover {
+  background-color: white !important;
+  cursor: unset !important;
+}
+.details .content .img img {
+  border: 1px solid rgba(255, 255, 255, 0.671);
+}
+.details .content .foot {
+  text-align: right;
+}

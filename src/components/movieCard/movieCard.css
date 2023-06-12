@@ -1,0 +1,40 @@
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.516);
+  height: 220px !important;
+  overflow: hidden;
+}
+.card img {
+  cursor: pointer;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.card:hover img {
+  scale: 1.1;
+  rotate: 5deg;
+}
+.card > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.767);
+  color: white;
+}
+.card > div svg {
+  background-color: rgba(255, 255, 255, 0.226);
+  color: white;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card > div svg:hover,
+.card > div svg.active {
+  background-color: var(--main-color);
+  color: white;
+}
+.card > div svg.act {
+  background-color: rgba(255, 255, 255, 0.226) !important;
+  color: white !important;
+}

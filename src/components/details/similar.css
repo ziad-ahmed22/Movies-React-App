@@ -1,0 +1,8 @@
+.similar h3 {
+  border-left: 4px solid var(--main-color);
+  padding: 5px 13px;
+}
+.similar .swiper-wrapper {
+  /* transition-timing-function: linear; */
+  height: 0;
+}

@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-color: #f20000;
+  --black-color: #080a1a;
+  --blue-Scolor: #0b0f29;
+  --gray-Scolor: #52636f;
+}
+.text-red {
+  color: #f20000 !important;
+}
+.bg-red {
+  background-color: #f20000 !important;
+}
+.bg-dark-blue {
+  background-color: #080a1a !important;
+}
+.bg-blue {
+  background-color: #0b0f29 !important;
+}
+.text-gray {
+  color: #708290 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-17 {
+  font-size: 17px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.flex-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.flex-between {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+body {
+  background-color: var(--black-color) !important;
+}
+input,
+button,
+textarea,
+a,
+input:focus,
+button:focus,
+textarea:focus,
+a:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: 0 !important;
+}
+a {
+  text-decoration: none !important;
 }

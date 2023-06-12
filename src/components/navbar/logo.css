@@ -1,0 +1,33 @@
+.logo {
+  width: fit-content;
+  height: auto;
+  letter-spacing: 4px;
+}
+.logo > span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.logo .n {
+  font-size: 45px;
+}
+.logo .e {
+  font-size: 40px;
+}
+.logo .t {
+  font-size: 35px;
+}
+.logo .f {
+  font-size: 30px;
+}
+.logo .l {
+  font-size: 25px;
+}
+.logo .i {
+  font-size: 20px;
+}
+.logo .x {
+  font-size: 15px;
+}
+.logo .o {
+  font-size: 10px;
+}

@@ -1,0 +1,38 @@
+.swiper {
+  margin-top: -5px;
+  height: 365px;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+.swiper .swiper-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper .swiper-slide .info {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  z-index: 5555555555000;
+}
+.swiper .swiper-slide .info svg:hover {
+  background-color: white !important;
+  cursor: unset !important;
+}
+.swiper .swiper-slide .info .more {
+  border: 1px solid var(--main-color) !important;
+}
+.swiper .swiper-slide .info .more:hover {
+  background-color: transparent !important;
+}

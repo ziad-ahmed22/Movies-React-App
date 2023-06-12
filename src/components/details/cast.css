@@ -1,0 +1,16 @@
+.cast h3 {
+  border-left: 4px solid var(--main-color);
+  padding: 5px 13px;
+}
+.cast .swiper {
+  height: 360px;
+}
+.cast .swiper-wrapper {
+  transition-timing-function: linear;
+  height: 0;
+}
+.cast .swiper-wrapper .swiper-slide img {
+  min-height: 260px;
+  max-height: 320px !important;
+  object-fit: cover;
+}
