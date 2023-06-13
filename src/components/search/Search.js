@@ -1,8 +1,6 @@
 import { Container } from "react-bootstrap";
 import "./search.css";
 import { useDispatch } from "react-redux";
-import Navbar from "./../navbar/Navbar";
-import Footer from "./../footer/Footer";
 import { fetchSearchMovies } from "../store/slices/searchSlice";
 import SearchList from "./SearchList";
 import { useEffect, useRef, useState } from "react";
@@ -23,7 +21,6 @@ const Search = () => {
 
   return (
     <div className="movies bg-dark-blue">
-      <Navbar />
       <Container>
         <div className="search py-4 bg-blue rounded mt-4">
           <form className="flex-center">
@@ -40,7 +37,6 @@ const Search = () => {
         </div>
         <SearchList text={text} />
       </Container>
-      <Footer />
     </div>
   );
 };

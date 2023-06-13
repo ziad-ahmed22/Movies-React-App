@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "./../navbar/Navbar";
 import HeaderC from "./../header/HeaderC";
-import Footer from "./../footer/Footer";
 import MovieCard from "./../movieCard/MovieCard";
 import { useDispatch, useSelector } from "react-redux";
 import { Badge, Button, Container } from "react-bootstrap";
@@ -13,7 +11,6 @@ const Watchlist = () => {
 
   return (
     <div className="watchlist">
-      <Navbar />
       <HeaderC title="Your Watchlist" />
       <Container>
         {!state.length ? (
@@ -42,8 +39,6 @@ const Watchlist = () => {
           </>
         )}
       </Container>
-
-      <Footer />
     </div>
   );
 };

@@ -1,14 +1,11 @@
 import React from "react";
-import Navbar from "./../navbar/Navbar";
 import HeaderC from "./../header/HeaderC";
-import Footer from "./../footer/Footer";
 import img from "./about2.jpg";
 import { Col, Container, Row } from "react-bootstrap";
 
 const About = () => {
   return (
     <div className="about">
-      <Navbar />
       <HeaderC title="About Us" />
 
       <Container>
@@ -60,8 +57,6 @@ const About = () => {
           </Row>
         </div>
       </Container>
-
-      <Footer />
     </div>
   );
 };

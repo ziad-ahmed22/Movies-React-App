@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
 import HeaderC from "../header/HeaderC";
-import Footer from "../footer/Footer";
 import { Col, Container, Row } from "react-bootstrap";
 import { BsFillEnvelopeFill, BsFillTelephoneInboundFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
@@ -10,7 +8,6 @@ import "./contact.css";
 const Contatct = () => {
   return (
     <div className="contact">
-      <Navbar />
       <HeaderC title="Contact Us" />
       <Container>
         <div className="content py-5">
@@ -45,7 +42,6 @@ const Contatct = () => {
           </Row>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 };
