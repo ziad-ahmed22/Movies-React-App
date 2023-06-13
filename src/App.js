@@ -37,7 +37,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contatct />} />
             <Route
-              path="*"
+              path="/*"
               element={<Error msg="Page Not Found" btn="true" height={100} />}
             />
           </Routes>
