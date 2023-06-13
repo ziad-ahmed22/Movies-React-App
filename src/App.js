@@ -29,6 +29,7 @@ function App() {
         <>
           <Navbar />
           <Routes>
+            <Route path="/NetflixoReactApp" element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/movies" element={<Movies />} />
             <Route path="/movies/:movieId" element={<Details />} />
@@ -37,7 +38,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contatct />} />
             <Route
-              path="/*"
+              path="*"
               element={<Error msg="Page Not Found" btn="true" height={100} />}
             />
           </Routes>
