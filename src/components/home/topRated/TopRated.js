@@ -74,7 +74,7 @@ const TopRated = () => {
                     <div className="info flex-center flex-column ">
                       <Love movie={movie} />
 
-                      <Link to={`/NetflixoReactApp/movies/${movie.id}`}>
+                      <Link to={`/movies/${movie.id}`}>
                         <h5
                           onClick={handelImgClick}
                           className="text-white mt-4 mb-3"
