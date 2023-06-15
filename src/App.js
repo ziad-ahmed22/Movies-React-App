@@ -40,7 +40,7 @@ function App() {
             <Route path="/NetflixoReactApp/about" element={<About />} />
             <Route path="/NetflixoReactApp/contact" element={<Contatct />} />
             <Route
-              path="/*"
+              path="/NetflixoReactApp/*"
               element={<Error msg="Page Not Found" btn="true" height={100} />}
             />
           </Routes>
