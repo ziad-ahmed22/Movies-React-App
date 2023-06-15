@@ -11,7 +11,8 @@ const Pagination = ({ handlePageClick, pageCount }) => {
         previousLabel={<MdOutlineArrowLeft />}
         onPageChange={handlePageClick}
         pageCount={pageCount > 500 ? 500 : pageCount}
-        pageRangeDisplayed={3}
+        pageRangeDisplayed={2}
+        marginPagesDisplayed={2}
         renderOnZeroPageCount={null}
         containerClassName="rPagination"
         breakClassName="rPage-item"

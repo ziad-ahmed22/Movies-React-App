@@ -14,7 +14,7 @@ const MovieCard = ({ movie }) => {
 
   return (
     <div className="card position-relative rounded">
-      <Link to={`/movies/${movie.id}`}>
+      <Link to={`/NetflixoReactApp/movies/${movie.id}`}>
         {movie.poster_path && (
           <img
             onClick={handelImgClick}

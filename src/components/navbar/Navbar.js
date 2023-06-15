@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <NavbarBs expand="lg" className="bg-dark-blue fw-bold py-1 navbar">
       <Container>
-        <NavbarBs.Brand as={Link} to="/">
+        <NavbarBs.Brand as={Link} to="/NetflixoReactApp">
           <Logo />
         </NavbarBs.Brand>
         <NavbarBs.Toggle
@@ -21,21 +21,37 @@ const Navbar = () => {
         />
         <NavbarBs.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto gap-4 nav align-items-center">
-            <Nav.Link as={NavLink} to="/" className="text-light">
+            <Nav.Link
+              as={NavLink}
+              to="/NetflixoReactApp"
+              className="text-light"
+            >
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/movies" className="text-light">
+            <Nav.Link
+              as={NavLink}
+              to="/NetflixoReactApp/movies"
+              className="text-light"
+            >
               Movies
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/about" className="text-light">
+            <Nav.Link
+              as={NavLink}
+              to="/NetflixoReactApp/about"
+              className="text-light"
+            >
               About Us
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/contact" className="text-light">
+            <Nav.Link
+              as={NavLink}
+              to="/NetflixoReactApp/contact"
+              className="text-light"
+            >
               Contact Us
             </Nav.Link>
             <Nav.Link
               as={NavLink}
-              to="/watchlist"
+              to="/NetflixoReactApp/watchlist"
               className="love-icon text-light fs-4"
             >
               <BsFillHeartFill />
@@ -45,7 +61,7 @@ const Navbar = () => {
             </Nav.Link>
             <Nav.Link
               as={NavLink}
-              to="/search"
+              to="/NetflixoReactApp/search"
               className="serch-icon text-light fs-5"
             >
               <ImSearch />
