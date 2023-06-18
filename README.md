@@ -8,5 +8,5 @@
   <li>Searching for a movie</li>
   <li>Adding a movie to your watch list and removing it by a toggle button on a movie card</li>
 </ul>
-</hr>
+<hr/>
 <a href="https://ziad-ahmed22.github.io/NetflixoReactApp/" target="_blank">Live View</a>
