@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const fetchTopRated = createAsyncThunk(
   "topRatedSlice/fetchTopRated",
-  async (num) => {
+  async () => {
     const res = await axios.get(
       `${TOP_RATED_URL}&page=${Math.floor(Math.random() * 10) + 1}`
     );
@@ -14,7 +14,6 @@ export const fetchTopRated = createAsyncThunk(
 
 const initialState = {
   data: [],
-  total_pages: 0,
   loading: false,
   error: "",
 };
@@ -30,7 +29,6 @@ const topRatedSlice = createSlice({
     builder.addCase(fetchTopRated.fulfilled, (state, action) => {
       state.loading = false;
       state.data = action.payload.results;
-      state.total_pages = action.payload.total_pages;
     });
     builder.addCase(fetchTopRated.rejected, (state, action) => {
       state.loading = false;

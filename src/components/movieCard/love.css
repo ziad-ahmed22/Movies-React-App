@@ -12,3 +12,9 @@ svg.active {
   background-color: var(--main-color);
   color: white;
 }
+svg:focus {
+  outline: none !important;
+}
+.my-tooltip {
+  background-color: rgb(21, 73, 87) !important;
+}

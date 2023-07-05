@@ -1,22 +1,35 @@
 import { Container } from "react-bootstrap";
 import "./search.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchSearchMovies } from "../store/slices/searchSlice";
 import SearchList from "./SearchList";
 import { useEffect, useRef, useState } from "react";
+import Pagination from "../pagination/Pagination";
 
 const Search = () => {
-  const dispatch = useDispatch();
-  const [text, setText] = useState("");
   const searchInput = useRef();
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state.search);
+  const [text, setText] = useState(
+    localStorage.getItem("searchText") ? localStorage.getItem("searchText") : ""
+  );
 
   const handelSearch = (e) => {
     setText(e.target.value);
-    dispatch(fetchSearchMovies({ word: e.target.value, num: 1 }));
+    dispatch(fetchSearchMovies({ word: e.target.value }));
+    localStorage.setItem("searchText", e.target.value);
+  };
+
+  // Pagination
+  const pageCount = state.total_pages;
+  const handlePageClick = ({ selected }) => {
+    dispatch(fetchSearchMovies({ word: text, num: selected + 1 }));
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {
     searchInput.current.focus();
+    text !== "" && dispatch(fetchSearchMovies({ word: text }));
   }, []);
 
   return (
@@ -35,7 +48,18 @@ const Search = () => {
             />
           </form>
         </div>
-        <SearchList text={text} />
+
+        {text ? (
+          <SearchList />
+        ) : (
+          <h3 className="text-center text-white py-5">
+            Search For Your Favorite Movie
+          </h3>
+        )}
+
+        {state.data.length && !state.error && (
+          <Pagination handlePageClick={handlePageClick} pageCount={pageCount} />
+        )}
       </Container>
     </div>
   );

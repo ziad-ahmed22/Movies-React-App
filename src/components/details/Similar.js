@@ -12,12 +12,11 @@ import Error from "../error/Error";
 
 const Similar = ({ movieId }) => {
   const dispatch = useDispatch();
+  const state = useSelector((state) => state.similar);
 
   useEffect(() => {
     dispatch(fetchSimilarMovies(movieId));
   }, [movieId]);
-
-  const state = useSelector((state) => state.similar);
 
   return (
     <div className="similar pt-5">

@@ -1,12 +1,17 @@
 .details {
   height: 90vh;
+  position: relative;
 }
 
+.details .bg-img {
+  position: absolute;
+  inset: 0;
+}
 .details .bg-img img {
   object-fit: cover;
 }
 .details .content {
-  background-color: rgba(0, 0, 0, 0.888);
+  background-color: rgba(0, 0, 0, 0.861);
   position: absolute;
   inset: 0;
 }
@@ -17,6 +22,14 @@
 .details .content .img img {
   border: 1px solid rgba(255, 255, 255, 0.671);
 }
+.details .content .img img:hover {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
 .details .content .foot {
   text-align: right;
+}
+.details .content .foot svg:hover {
+  background-color: var(--main-color) !important;
+  cursor: pointer !important;
 }

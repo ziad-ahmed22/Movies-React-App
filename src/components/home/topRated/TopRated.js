@@ -5,35 +5,20 @@ import "swiper/css";
 
 import { Container } from "react-bootstrap";
 import "./topRated.css";
-import { useEffect, useState } from "react";
-import { AiFillHeart, AiTwotoneStar } from "react-icons/ai";
+import { useState } from "react";
 import { BsArrowRightSquareFill, BsArrowLeftSquareFill } from "react-icons/bs";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Loading from "../../loading/Loading";
 import Error from "../../error/Error";
 import { IMG_URL } from "../../URL";
 import { Link } from "react-router-dom";
-import { fetchTopRated } from "../../store/slices/topRatedSlice";
 import Love from "./../../movieCard/Love";
 
 const TopRated = () => {
   // Swiper
   const [swiper, setSwiper] = useState(null);
-
-  //   Data
+  // Data
   const state = useSelector((state) => state.topRated);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchTopRated());
-  }, []);
-
-  const handelImgClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <div className="top-rated py-5 px-1">
@@ -75,23 +60,12 @@ const TopRated = () => {
                       <Love movie={movie} />
 
                       <Link to={`/NetflixoReactApp/movies/${movie.id}`}>
-                        <h5
-                          onClick={handelImgClick}
-                          className="text-white mt-4 mb-3"
-                        >
+                        <h5 className="text-white mt-4 mb-3">
                           {movie.original_title.length > 25
                             ? movie.original_title.slice(0, 25) + "...."
                             : movie.original_title}
                         </h5>
                       </Link>
-
-                      <div className="stars">
-                        <AiTwotoneStar />
-                        <AiTwotoneStar />
-                        <AiTwotoneStar />
-                        <AiTwotoneStar />
-                        <AiTwotoneStar />
-                      </div>
                     </div>
                   </SwiperSlide>
                 ))}

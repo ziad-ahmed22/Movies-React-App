@@ -1,23 +1,14 @@
-import { AiFillHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { IMG_URL } from "../URL";
 import "./movieCard.css";
 import Love from "./Love";
 
 const MovieCard = ({ movie }) => {
-  const handelImgClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div className="card position-relative rounded">
       <Link to={`/NetflixoReactApp/movies/${movie.id}`}>
         {movie.poster_path && (
           <img
-            onClick={handelImgClick}
             src={IMG_URL + movie.poster_path}
             alt={movie.original_title}
             className="w-100 h-100"

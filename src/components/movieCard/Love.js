@@ -1,34 +1,33 @@
 import "./love.css";
 import { AiFillHeart } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
-import { addToLove, removeFromLove } from "../store/slices/loveSlice";
+import { handleLove } from "../store/slices/loveSlice";
 import { useEffect, useState } from "react";
+import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 const Love = ({ movie }) => {
-  const state = useSelector((state) => state.love);
   const dispatch = useDispatch();
+  const state = useSelector((state) => state.love);
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
-    setIsActive(state.find((m) => m.id === movie.id));
-  }, [state, movie.id]);
-
-  const handelLove = () => {
-    if (state.find((m) => m.id === movie.id)) {
-      setIsActive(false);
-      dispatch(removeFromLove(movie));
-    } else {
-      setIsActive(true);
-      dispatch(addToLove(movie));
-    }
-  };
+    setIsActive(state.some((m) => m.id === movie.id));
+  }, [state]);
 
   return (
-    <AiFillHeart
-      onClick={handelLove}
-      title={isActive ? "Remove From Love List" : "Add To Love List"}
-      className={isActive ? "active" : ""}
-    />
+    <>
+      <Tooltip id={movie.id} className="my-tooltip" />
+      <AiFillHeart
+        onClick={() => dispatch(handleLove(movie))}
+        className={isActive ? "active" : ""}
+        data-tooltip-place="left"
+        data-tooltip-id={movie.id}
+        data-tooltip-content={
+          isActive ? "Remove From Love List" : "Add To Love List"
+        }
+      />
+    </>
   );
 };
 

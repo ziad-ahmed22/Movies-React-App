@@ -33,6 +33,7 @@ const allMoviesSlice = createSlice({
     builder.addCase(fetchAllMovies.rejected, (state, action) => {
       state.loading = false;
       state.data = [];
+      state.total_pages = 0;
       state.error = action.error.message;
     });
   },

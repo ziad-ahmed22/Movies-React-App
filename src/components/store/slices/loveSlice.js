@@ -8,16 +8,21 @@ const loveSlice = createSlice({
   initialState,
   name: "loveSlice",
   reducers: {
-    addToLove: (state, action) => {
+    handleLove: (state, action) => {
       const movieInArr = state.find((movie) => movie.id === action.payload.id);
-      !movieInArr && state.unshift(action.payload);
-      localStorage.setItem("love", JSON.stringify(state));
+
+      if (!movieInArr) {
+        state.unshift(action.payload);
+        localStorage.setItem("love", JSON.stringify(state));
+      } else {
+        const newState = state.filter(
+          (movie) => movie.id !== action.payload.id
+        );
+        localStorage.setItem("love", JSON.stringify(newState));
+        return newState;
+      }
     },
-    removeFromLove: (state, action) => {
-      const newState = state.filter((movie) => movie.id !== action.payload.id);
-      localStorage.setItem("love", JSON.stringify(newState));
-      return newState;
-    },
+
     removeAll: (state, action) => {
       localStorage.removeItem("love");
       state.length = 0;
@@ -25,5 +30,6 @@ const loveSlice = createSlice({
   },
 });
 
-export const { addToLove, removeFromLove, removeAll } = loveSlice.actions;
+export const { addToLove, handleLove, removeFromLove, removeAll } =
+  loveSlice.actions;
 export default loveSlice.reducer;

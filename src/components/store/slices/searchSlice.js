@@ -4,7 +4,7 @@ import { SEARCH_URL } from "../../URL";
 
 export const fetchSearchMovies = createAsyncThunk(
   "searchSlice/fetchSearchMovies",
-  async ({ word, num }) => {
+  async ({ word, num = 1 }) => {
     const res = await axios.get(`${SEARCH_URL}&query=${word}&page=${num}`);
     return res.data;
   }
@@ -33,6 +33,7 @@ const searchSlice = createSlice({
     builder.addCase(fetchSearchMovies.rejected, (state, action) => {
       state.loading = false;
       state.data = [];
+      state.total_pages = 0;
       state.error = action.error.message;
     });
   },

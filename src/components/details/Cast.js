@@ -9,15 +9,15 @@ import { IMG_URL } from "./../URL";
 import { Container } from "react-bootstrap";
 import Loading from "./../loading/Loading";
 import Error from "../error/Error";
+import avatar from "./avatar.png";
 
 const Cast = ({ movieId }) => {
   const dispatch = useDispatch();
+  const state = useSelector((state) => state.cast);
 
   useEffect(() => {
     dispatch(fetchMovieCast(movieId));
   }, [movieId]);
-
-  const state = useSelector((state) => state.cast);
 
   return (
     <div className="cast pt-5">
@@ -46,13 +46,19 @@ const Cast = ({ movieId }) => {
                 modules={[Autoplay]}
                 autoplay={{ delay: 0, disableOnInteraction: false }}
               >
-                {state.data.slice(0, 10).map((item, index) => (
+                {state.data.map((item, index) => (
                   <SwiperSlide key={index}>
                     <div>
-                      {item.profile_path && (
+                      {item.profile_path ? (
                         <img
                           className="rounded"
                           src={`${IMG_URL}${item.profile_path}`}
+                          alt={item.original_name}
+                        />
+                      ) : (
+                        <img
+                          className="rounded"
+                          src={avatar}
                           alt={item.original_name}
                         />
                       )}

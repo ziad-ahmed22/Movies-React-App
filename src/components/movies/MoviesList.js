@@ -15,10 +15,11 @@ const MoviesList = () => {
   }, []);
 
   // Pagination
+  const pageCount = state.total_pages;
   const handlePageClick = ({ selected }) => {
     dispatch(fetchAllMovies(selected + 1));
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  const pageCount = state.total_pages;
 
   return (
     <div className="popular-movies py-5">

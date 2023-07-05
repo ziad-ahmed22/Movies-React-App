@@ -34,17 +34,12 @@
   height: 50px;
   padding: 10px;
   border-radius: 50%;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .top-rated .swiper .swiper-slide .info > svg:hover,
 .top-rated .swiper .swiper-slide .info > svg.active {
   background-color: var(--main-color) !important;
   color: white !important;
-}
-.top-rated .swiper .swiper-slide .info .stars svg {
-  color: yellow;
-  margin: 3px;
-  font-size: 20px;
 }
 .top-rated .btns svg {
   cursor: pointer;
