@@ -11,13 +11,15 @@ const Search = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.search);
   const [text, setText] = useState(
-    localStorage.getItem("searchText") ? localStorage.getItem("searchText") : ""
+    sessionStorage.getItem("searchText")
+      ? sessionStorage.getItem("searchText")
+      : ""
   );
 
   const handelSearch = (e) => {
     setText(e.target.value);
     dispatch(fetchSearchMovies({ word: e.target.value }));
-    localStorage.setItem("searchText", e.target.value);
+    sessionStorage.setItem("searchText", e.target.value);
   };
 
   // Pagination

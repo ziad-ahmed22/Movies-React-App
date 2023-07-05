@@ -4,18 +4,12 @@ import { Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { ImSearch } from "react-icons/im";
 import { BsFillHeartFill } from "react-icons/bs";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const state = useSelector((state) => state.love);
-  const [active, setActive] = useState(
-    localStorage.getItem("activeLink") || "home"
-  );
-
-  useEffect(() => {
-    localStorage.setItem("activeLink", active);
-  }, [active]);
+  const location = useLocation();
 
   return (
     <NavbarBs expand="lg" className="bg-dark-blue fw-bold py-1 navbar">
@@ -34,8 +28,9 @@ const Navbar = () => {
             <Nav.Link
               as={Link}
               to="/NetflixoReactApp"
-              className={`text-light ${active === "home" ? "active" : ""}`}
-              onClick={() => setActive("home")}
+              className={`text-light ${
+                location.pathname === "/NetflixoReactApp" ? "active" : ""
+              }`}
             >
               Home
             </Nav.Link>
@@ -43,8 +38,9 @@ const Navbar = () => {
             <Nav.Link
               as={Link}
               to="/NetflixoReactApp/movies"
-              className={`text-light ${active === "movies" ? "active" : ""}`}
-              onClick={() => setActive("movies")}
+              className={`text-light ${
+                location.pathname === "/NetflixoReactApp/movies" ? "active" : ""
+              }`}
             >
               Movies
             </Nav.Link>
@@ -52,8 +48,9 @@ const Navbar = () => {
             <Nav.Link
               as={Link}
               to="/NetflixoReactApp/about"
-              className={`text-light ${active === "about" ? "active" : ""}`}
-              onClick={() => setActive("about")}
+              className={`text-light ${
+                location.pathname === "/NetflixoReactApp/about" ? "active" : ""
+              }`}
             >
               About Us
             </Nav.Link>
@@ -61,8 +58,11 @@ const Navbar = () => {
             <Nav.Link
               as={Link}
               to="/NetflixoReactApp/contact"
-              className={`text-light ${active === "contact" ? "active" : ""}`}
-              onClick={() => setActive("contact")}
+              className={`text-light ${
+                location.pathname === "/NetflixoReactApp/contact"
+                  ? "active"
+                  : ""
+              }`}
             >
               Contact Us
             </Nav.Link>
@@ -71,9 +71,10 @@ const Navbar = () => {
               as={Link}
               to="/NetflixoReactApp/watchlist"
               className={`love-icon text-light fs-4 ${
-                active === "watchlist" ? "active" : ""
+                location.pathname === "/NetflixoReactApp/watchlist"
+                  ? "active"
+                  : ""
               }`}
-              onClick={() => setActive("watchlist")}
             >
               <BsFillHeartFill />
               <div className="loves-num bg-red flex-center rounded-circle">
@@ -85,9 +86,8 @@ const Navbar = () => {
               as={Link}
               to="/NetflixoReactApp/search"
               className={`terch-icon text-light fs-5 ${
-                active === "search" ? "active" : ""
+                location.pathname === "/NetflixoReactApp/search" ? "active" : ""
               }`}
-              onClick={() => setActive("search")}
             >
               <ImSearch />
             </Nav.Link>
