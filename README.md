@@ -1,12 +1,12 @@
 # Netflixo React App
 ## Movies Website Using Redux Toolkit
 
-<ul>
-  <li>Fetching data from API</li>
-  <li>Slider showing random movies</li>
-  <li>Movies Page containing a list of all movies with a pagination to navigate between pages</li>
-  <li>Searching for a movie</li>
-  <li>Adding a movie to your watch list and removing it by a toggle button on a movie card</li>
-</ul>
+  -	Displaying Movies by fetching data from API using Axios.
+  -	Using pagination to move between movies cards.
+  -	Searching for movies using the API.
+  -	Adding movies to a watchlist list and saving it in local storage.
+  -	Displaying movies details and the cast related to the movie, also Displaying related movies.
+  -	HTML | CSS | Bootstrap | React | Redux Toolkit | API | React Tooltip | Swiper Slider | Responsive
+
 <hr/>
 <a href="https://ziad-ahmed22.github.io/NetflixoReactApp/" target="_blank">Live View</a>
