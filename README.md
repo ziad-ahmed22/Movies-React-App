@@ -9,4 +9,4 @@
   -	HTML | CSS | Bootstrap | React | Redux Toolkit | API | React Tooltip | Swiper Slider | Responsive
 
 <hr/>
-<a href="https://ziad-ahmed22.github.io/NetflixoReactApp/" target="_blank">Live View</a>
+<a href="https://ziad-ahmed22.github.io/Movies-React-App/">Live View</a>
