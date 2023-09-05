@@ -26,7 +26,7 @@ const Footer = () => {
                 {item.links.map((i, index) => (
                   <li key={index} className="mt-2 fs-14">
                     <a
-                      href="/NetflixoReactApp"
+                      href="/"
                       className="text-decoration-none text-gray"
                     >
                       {i}
@@ -37,13 +37,13 @@ const Footer = () => {
             </Col>
           ))}
           <Col className="logo-part">
-            <a href="/NetflixoReactApp" className="text-decoration-none">
+            <a href="/" className="text-decoration-none">
               <Logo />
             </a>
             <ul className="list-unstyled">
               <li className="mt-2 fs-14">
                 <a
-                  href="/NetflixoReactApp"
+                  href="/"
                   className="text-decoration-none text-gray"
                 >
                   Lorem 196 Andrew Road
@@ -51,7 +51,7 @@ const Footer = () => {
               </li>
               <li className="mt-2 fs-14">
                 <a
-                  href="/NetflixoReactApp"
+                  href="/"
                   className="text-decoration-none text-gray"
                 >
                   New York, NY 10007
@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li className="mt-2 fs-14">
                 <a
-                  href="/NetflixoReactApp"
+                  href="/"
                   className="text-decoration-none text-gray"
                 >
                   Tell: +255 754 661 423
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
               <li className="mt-2 fs-14">
                 <a
-                  href="/NetflixoReactApp"
+                  href="/"
                   className="text-decoration-none text-gray"
                 >
                   Email: info@ziad.com

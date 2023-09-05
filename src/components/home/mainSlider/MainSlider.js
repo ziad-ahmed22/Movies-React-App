@@ -36,7 +36,7 @@ const MainSlider = () => {
                 </span>
               </div>
               <Button
-                onClick={() => navigate("/NetflixoReactApp/movies")}
+                onClick={() => navigate("/movies")}
                 className="more bg-red"
               >
                 More Movies

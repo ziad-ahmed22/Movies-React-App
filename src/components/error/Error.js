@@ -16,7 +16,7 @@ const Error = ({ msg, btn, height }) => {
       {btn === "true" && (
         <Button
           className="bg-red px-4 py-2"
-          onClick={() => navigate("/NetflixoReactApp")}
+          onClick={() => navigate("/")}
         >
           Home
         </Button>

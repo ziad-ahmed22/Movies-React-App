@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <NavbarBs expand="lg" className="bg-dark-blue fw-bold py-1 navbar">
       <Container>
-        <NavbarBs.Brand as={Link} to="/NetflixoReactApp">
+        <NavbarBs.Brand as={Link} to="/">
           <Logo />
         </NavbarBs.Brand>
 
@@ -27,9 +27,9 @@ const Navbar = () => {
           <Nav className="ms-auto gap-4 nav align-items-center">
             <Nav.Link
               as={Link}
-              to="/NetflixoReactApp"
+              to="/"
               className={`text-light ${
-                location.pathname === "/NetflixoReactApp" ? "active" : ""
+                location.pathname === "/" ? "active" : ""
               }`}
             >
               Home
@@ -37,9 +37,9 @@ const Navbar = () => {
 
             <Nav.Link
               as={Link}
-              to="/NetflixoReactApp/movies"
+              to="/movies"
               className={`text-light ${
-                location.pathname === "/NetflixoReactApp/movies" ? "active" : ""
+                location.pathname === "/movies" ? "active" : ""
               }`}
             >
               Movies
@@ -47,9 +47,9 @@ const Navbar = () => {
 
             <Nav.Link
               as={Link}
-              to="/NetflixoReactApp/about"
+              to="/about"
               className={`text-light ${
-                location.pathname === "/NetflixoReactApp/about" ? "active" : ""
+                location.pathname === "/about" ? "active" : ""
               }`}
             >
               About Us
@@ -57,9 +57,9 @@ const Navbar = () => {
 
             <Nav.Link
               as={Link}
-              to="/NetflixoReactApp/contact"
+              to="/contact"
               className={`text-light ${
-                location.pathname === "/NetflixoReactApp/contact"
+                location.pathname === "/contact"
                   ? "active"
                   : ""
               }`}
@@ -69,9 +69,9 @@ const Navbar = () => {
 
             <Nav.Link
               as={Link}
-              to="/NetflixoReactApp/watchlist"
+              to="/watchlist"
               className={`love-icon text-light fs-4 ${
-                location.pathname === "/NetflixoReactApp/watchlist"
+                location.pathname === "/watchlist"
                   ? "active"
                   : ""
               }`}
@@ -84,9 +84,9 @@ const Navbar = () => {
 
             <Nav.Link
               as={Link}
-              to="/NetflixoReactApp/search"
+              to="/search"
               className={`terch-icon text-light fs-5 ${
-                location.pathname === "/NetflixoReactApp/search" ? "active" : ""
+                location.pathname === "/search" ? "active" : ""
               }`}
             >
               <ImSearch />

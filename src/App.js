@@ -29,18 +29,18 @@ function App() {
         <>
           <Navbar />
           <Routes>
-            <Route path="/NetflixoReactApp" element={<Home />} />
-            <Route path="/NetflixoReactApp/movies" element={<Movies />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/movies" element={<Movies />} />
             <Route
-              path="/NetflixoReactApp/movies/:movieId"
+              path="/movies/:movieId"
               element={<Details />}
             />
-            <Route path="/NetflixoReactApp/watchlist" element={<Watchlist />} />
-            <Route path="/NetflixoReactApp/search" element={<Search />} />
-            <Route path="/NetflixoReactApp/about" element={<About />} />
-            <Route path="/NetflixoReactApp/contact" element={<Contatct />} />
+            <Route path="/watchlist" element={<Watchlist />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contatct />} />
             <Route
-              path="/NetflixoReactApp/*"
+              path="/*"
               element={<Error msg="Page Not Found" btn="true" height={100} />}
             />
           </Routes>
