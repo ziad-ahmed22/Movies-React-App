@@ -13,7 +13,7 @@ const Love = ({ movie }) => {
 
   useEffect(() => {
     setIsActive(state.some((m) => m.id === movie.id));
-  }, [state]);
+  }, [movie.id, state]);
 
   return (
     <>

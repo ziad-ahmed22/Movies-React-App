@@ -13,7 +13,7 @@ const PopularMovies = () => {
 
   useEffect(() => {
     dispatch(fetchTopRated());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="popular-movies py-5">

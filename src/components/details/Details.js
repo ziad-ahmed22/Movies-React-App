@@ -28,7 +28,7 @@ const Details = () => {
 
   useEffect(() => {
     dispatch(fetchMovieDetails(movieId));
-  }, [movieId]);
+  }, [dispatch, movieId]);
 
   if (state.loading) return <Loading />;
 

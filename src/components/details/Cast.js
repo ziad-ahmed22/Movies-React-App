@@ -17,7 +17,7 @@ const Cast = ({ movieId }) => {
 
   useEffect(() => {
     dispatch(fetchMovieCast(movieId));
-  }, [movieId]);
+  }, [dispatch, movieId]);
 
   return (
     <div className="cast pt-5">

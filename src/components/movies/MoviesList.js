@@ -12,7 +12,7 @@ const MoviesList = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchAllMovies(1));
-  }, []);
+  }, [dispatch]);
 
   // Pagination
   const pageCount = state.total_pages;

@@ -16,12 +16,12 @@ const Similar = ({ movieId }) => {
 
   useEffect(() => {
     dispatch(fetchSimilarMovies(movieId));
-  }, [movieId]);
+  }, [dispatch, movieId]);
+
+  if (state.loading) return <Loading grid="true" />;
 
   return (
     <div className="similar pt-5">
-      {state.loading && <Loading grid="true" />}
-
       {!state.error && !state.loading && state.data.length && (
         <Container fluid>
           {!state.error && !state.loading ? (

@@ -32,7 +32,7 @@ const Search = () => {
   useEffect(() => {
     searchInput.current.focus();
     text !== "" && dispatch(fetchSearchMovies({ word: text }));
-  }, []);
+  }, [dispatch, text]);
 
   return (
     <div className="movies bg-dark-blue">
