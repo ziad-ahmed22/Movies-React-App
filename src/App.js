@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setPageLoading(false);
-    }, 0);
+    }, 1600);
   }, []);
 
   return (
@@ -31,10 +31,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/movies" element={<Movies />} />
-            <Route
-              path="/movies/:movieId"
-              element={<Details />}
-            />
+            <Route path="/movies/:movieId" element={<Details />} />
             <Route path="/watchlist" element={<Watchlist />} />
             <Route path="/search" element={<Search />} />
             <Route path="/about" element={<About />} />
