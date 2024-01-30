@@ -1,0 +1,35 @@
+.details-header {
+  height: 90vh;
+  position: relative;
+}
+
+.details-header .bg-img {
+  position: absolute;
+  inset: 0;
+}
+.details-header .bg-img img {
+  object-fit: cover;
+}
+.details-header .content {
+  background-color: rgba(0, 0, 0, 0.82);
+  position: absolute;
+  inset: 0;
+}
+.details-header .content .box svg:hover {
+  background-color: white !important;
+  cursor: unset !important;
+}
+.details-header .content .img img {
+  border: 1px solid rgba(255, 255, 255, 0.671);
+}
+.details-header .content .img img:hover {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+.details-header .content .foot {
+  text-align: right;
+}
+.details-header .content .foot svg:hover {
+  background-color: var(--main-color) !important;
+  cursor: pointer !important;
+}

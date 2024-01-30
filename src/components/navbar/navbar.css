@@ -1,5 +1,5 @@
 .navbar {
-  z-index: 50000000000;
+  z-index: 500;
   position: sticky !important;
   top: 0;
 }
@@ -7,14 +7,28 @@
 .nav > a.active {
   color: var(--main-color) !important;
 }
+
 .nav .love-icon {
   position: relative;
   display: inline-block;
 }
+
+.nav svg {
+  height: 30px;
+  width: 30px;
+  padding: 6px;
+  border-radius: 8px;
+  background-color: white;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.nav a:hover svg,
 .nav a.active svg {
   color: white;
   background-color: var(--main-color);
 }
+
 .nav .loves-num {
   position: absolute;
   top: 2px;
@@ -22,9 +36,11 @@
   width: 20px;
   height: 20px;
   font-size: 15px;
+  transition: 0.3s;
 }
+
 .nav > a:hover .loves-num,
 .nav > a.active .loves-num {
-  color: var(--main-color) !important;
-  background-color: white !important;
+  color: white !important;
+  background-color: var(--main-color) !important;
 }
