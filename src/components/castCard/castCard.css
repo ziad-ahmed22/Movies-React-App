@@ -1,0 +1,5 @@
+.cast-card img {
+  min-height: 260px;
+  max-height: 320px !important;
+  object-fit: cover;
+}

@@ -1,6 +1,6 @@
+import { MdOutlineArrowLeft, MdOutlineArrowRight } from "react-icons/md";
 import ReactPaginate from "react-paginate";
 import "./pagination.css";
-import { MdOutlineArrowLeft, MdOutlineArrowRight } from "react-icons/md";
 
 const Pagination = ({ handlePageClick, pageCount }) => {
   return (
