@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/Movies-React-App/static/css/main.23504ea4.css",
-    "main.js": "/Movies-React-App/static/js/main.9e8b5947.js",
-    "static/js/787.cd60fb8e.chunk.js": "/Movies-React-App/static/js/787.cd60fb8e.chunk.js",
+    "main.css": "/Movies-React-App/static/css/main.a442fa05.css",
+    "main.js": "/Movies-React-App/static/js/main.1e2d9192.js",
     "static/media/4.jpg": "/Movies-React-App/static/media/4.205c4d3cb3992c20af26.jpg",
-    "static/media/head.png": "/Movies-React-App/static/media/head.02acca9b1c7ba9e26c92.png",
+    "static/media/header.png": "/Movies-React-App/static/media/header.02acca9b1c7ba9e26c92.png",
     "static/media/mobile.png": "/Movies-React-App/static/media/mobile.5ea7905dec53c4abfc74.png",
     "static/media/about2.jpg": "/Movies-React-App/static/media/about2.faa9aec5c6fd50a54c12.jpg",
     "static/media/3.jpg": "/Movies-React-App/static/media/3.8ae06072686918fa322d.jpg",
@@ -15,12 +14,11 @@
     "static/media/avatar.png": "/Movies-React-App/static/media/avatar.934339d98b117001e1d3.png",
     "static/media/404.svg": "/Movies-React-App/static/media/404.eef3f90c1344c7de195dbb68ac66ec3a.svg",
     "index.html": "/Movies-React-App/index.html",
-    "main.23504ea4.css.map": "/Movies-React-App/static/css/main.23504ea4.css.map",
-    "main.9e8b5947.js.map": "/Movies-React-App/static/js/main.9e8b5947.js.map",
-    "787.cd60fb8e.chunk.js.map": "/Movies-React-App/static/js/787.cd60fb8e.chunk.js.map"
+    "main.a442fa05.css.map": "/Movies-React-App/static/css/main.a442fa05.css.map",
+    "main.1e2d9192.js.map": "/Movies-React-App/static/js/main.1e2d9192.js.map"
   },
   "entrypoints": [
-    "static/css/main.23504ea4.css",
-    "static/js/main.9e8b5947.js"
+    "static/css/main.a442fa05.css",
+    "static/js/main.1e2d9192.js"
   ]
 }
