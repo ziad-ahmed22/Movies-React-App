@@ -1,0 +1,36 @@
+.main-card {
+  height: 100%;
+  position: relative;
+}
+.main-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.main-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-slider .swiper .swiper-slide .info {
+  position: absolute;
+  top: 28%;
+  left: 15%;
+  z-index: 55555;
+}
+
+.main-slider .info svg {
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  opacity: 0.9;
+}
+
+.main-slider .info .more:hover {
+  opacity: 0.9;
+}

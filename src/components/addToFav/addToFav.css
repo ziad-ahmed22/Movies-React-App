@@ -1,0 +1,23 @@
+.add-to-fav svg {
+  background-color: rgba(255, 255, 255, 0.406);
+  color: white;
+  width: 37px !important;
+  height: 37px !important;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-to-fav svg:hover,
+.add-to-fav svg.active {
+  background-color: var(--main-color);
+  color: white;
+}
+.add-to-fav svg:focus {
+  outline: none !important;
+}
+.add-to-fav .my-tooltip {
+  background-color: rgb(21, 73, 87) !important;
+  font-weight: bold;
+  border-radius: 8px;
+}

@@ -1,11 +1,10 @@
-import React from "react";
-import img from "./head.png";
+import img from "../../assets/images/header.png";
 import "./headec.css";
 
 const HeaderC = ({ title }) => {
   return (
     <div className="header text-white position-relative">
-      <img src={img} alt="" />
+      <img src={img} alt={title} />
       <h1 className="flex-center">{title}</h1>
     </div>
   );

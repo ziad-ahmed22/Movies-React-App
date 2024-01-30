@@ -4,6 +4,11 @@
   --blue-Scolor: #0b0f29;
   --gray-Scolor: #52636f;
 }
+
+body {
+  background-color: var(--black-color) !important;
+}
+
 .text-red {
   color: #f20000 !important;
 }
@@ -51,9 +56,7 @@
   justify-content: space-between !important;
   align-items: center !important;
 }
-body {
-  background-color: var(--black-color) !important;
-}
+
 input,
 button,
 textarea,
@@ -66,6 +69,21 @@ a:focus {
   border: none !important;
   box-shadow: 0 !important;
 }
+
 a {
   text-decoration: none !important;
+}
+
+img {
+  user-select: none;
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.trim-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

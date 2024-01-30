@@ -1,0 +1,54 @@
+/* mainSlider */
+.my-swiper.mainSlider .swiper {
+  margin-top: -5px;
+  height: 360px;
+  overflow: hidden;
+  cursor: grab;
+}
+.my-swiper.mainSlider .swiper .swiper-slide {
+  height: 100%;
+}
+
+/* topRated */
+.my-swiper.topRated .swiper {
+  cursor: unset;
+  height: 420px;
+}
+.my-swiper.topRated .swiper .swiper-wrapper {
+  display: flex;
+  height: 0;
+}
+.my-swiper.topRated .swiper .swiper-wrapper .swiper-slide {
+  height: 400px;
+  overflow: hidden;
+}
+
+/* cast */
+.my-swiper.cast .swiper {
+  height: 360px;
+}
+.my-swiper.cast .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.my-swiper.cast .swiper .swiper-wrapper {
+  transition-timing-function: linear;
+  height: 0;
+}
+
+/* similar */
+.my-swiper.similar .swiper {
+  height: 365px;
+}
+.my-swiper.similar .swiper-wrapper {
+  height: 0;
+}
+
+/* Pagination */
+.my-swiper .btns svg {
+  cursor: pointer;
+}
+.my-swiper .btns svg:hover {
+  color: white !important;
+}
